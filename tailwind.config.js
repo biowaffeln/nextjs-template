@@ -1,5 +1,10 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
+/** @typedef { import('tailwindcss/defaultConfig') } DefaultConfig */
+/** @typedef { import('tailwindcss/defaultTheme') } DefaultTheme */
+/** @typedef { DefaultConfig & { theme: { extend: DefaultTheme } } } TailwindConfig */
+
+/** @type {TailwindConfig} */
 module.exports = {
 	future: {
 		removeDeprecatedGapUtilities: true,
