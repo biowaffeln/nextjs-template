@@ -6,15 +6,6 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {TailwindConfig} */
 module.exports = {
-	future: {
-		removeDeprecatedGapUtilities: true,
-		purgeLayersByDefault: true,
-		standardFontWeights: true,
-		defaultLineHeights: true,
-	},
-	experimental: {
-		applyComplexClasses: true,
-	},
 	purge: ["./components/**/*.{js,ts,jsx,tsx}", "./pages/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		fontFamily: {
