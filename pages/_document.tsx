@@ -4,7 +4,7 @@ import React from "react";
 class Document extends NextDocument {
 	render() {
 		return (
-			<Html>
+			<Html lang="en">
 				<Head>
 					<link
 						href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
