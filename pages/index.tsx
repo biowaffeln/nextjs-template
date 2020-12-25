@@ -6,7 +6,7 @@ const Home: FC = () => (
 	<>
 		<SEO title="Home" description="Home page of Mark's Next.js template." />
 		<Nav />
-		<div className="py-20 lg:py-32 text-center container-center">
+		<div className="py-20 lg:py-32 text-center container">
 			<p className="text-xl lg:text-2xl tracking-wide text-gray-900 mb-3">
 				welcome to Mark's
 			</p>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Nav = () => (
 	<header className="py-8">
-		<div className="container-center flex justify-between items-center">
+		<div className="container flex justify-between items-center">
 			<h2 className="font-semibold text-xl">{config.title}</h2>
 			<nav>
 				<Link href="/">

@@ -1,3 +1,4 @@
+const { container } = require("tailwindcss/defaultTheme");
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @typedef { import('tailwindcss/defaultConfig') } DefaultConfig */
@@ -30,6 +31,33 @@ module.exports = {
 			huge: ["4.75rem", { lineHeight: "1" }],
 		},
 	},
+	corePlugins: {
+		container: false,
+	},
 	variants: {},
-	plugins: [],
+	plugins: [
+		function ({ addComponents }) {
+			addComponents({
+				".container": {
+					width: "100%",
+					marginLeft: "auto",
+					marginRight: "auto",
+					paddingLeft: "1.25rem",
+					paddingRight: "1.25rem",
+					"@screen sm": {
+						maxWidth: "640px",
+					},
+					"@screen md": {
+						maxWidth: "768px",
+					},
+					"@screen lg": {
+						maxWidth: "1024px",
+					},
+					"@screen xl": {
+						maxWidth: "1280px",
+					},
+				},
+			});
+		},
+	],
 };
